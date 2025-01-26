@@ -591,6 +591,8 @@ button[type="submit"]:hover {
     padding-top: 1.5vh;
     padding-bottom: 1vh;
     width: 100% auto;
+    position: absolute;
+  bottom: 0;
 }
 .social {
     margin: 0 auto;
