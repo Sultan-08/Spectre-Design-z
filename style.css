@@ -3,8 +3,10 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
 body {
-    background-color: #D1D1D1;
+    background-color: rgb(252 255 214);
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
@@ -15,7 +17,7 @@ header {
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(248 255 175);
 }
 header ul {
     margin: 0;
@@ -26,6 +28,13 @@ header a, a {
     text-decoration: none;
 }
 
+header span {
+    font-family: "Knewave", serif;
+    font-weight: 400;
+    font-style: italic; 
+    font-size: 1rem;
+  }
+
 .jp a,
 .main-nav a {
     padding: 1rem 1.5rem;
@@ -34,6 +43,8 @@ header a, a {
     display: block;
     text-decoration: none;
     color: var(--darkbg);
+    font-style: italic;
+    text-transform: none;
 }
 .jp {
     margin: 0;
@@ -79,12 +90,13 @@ header a, a {
         justify-content: space-between;
         /* padding-top: 20px;
         padding-bottom: 20px; */
-        background-color: rgb(196, 196, 196);
+        background-color: rgb(248 255 175);
         width: 100%;
         padding: 0.5rem 10rem 0.5rem 2.5rem;
     }
     .main-nav .active {
         color: black;
+        text-transform: none;
     }
     .main-nav {
         margin-right: 0.5rem;
@@ -399,7 +411,7 @@ section h2 {
 }
 
 #contact span { 
-    background: #D1D1D1; 
+    background: rgb(252 255 214);
     padding: 0 12px !important; 
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -574,11 +586,10 @@ button[type="submit"]:hover {
 }
 
 .footer {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(251, 255, 192);
     margin-top: 3vh;
     padding-top: 1.5vh;
     padding-bottom: 1vh;
-
     width: 100% auto;
 }
 .social {
@@ -644,6 +655,10 @@ button[type="submit"]:hover {
     -webkit-text-fill-color: transparent;
 }
 
+.scroll-to-top i{
+    position: absolute;
+    right: 0.5rem;
+}
 
 /* ===============
 ANIMATIONS 
