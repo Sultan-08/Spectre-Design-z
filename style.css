@@ -10,9 +10,7 @@ body {
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
-
 /* Navigation Bar */
-
 header {
     box-sizing: border-box;
     margin: 0;
@@ -76,11 +74,6 @@ header span {
         align-items: center;
         height: 4rem;
         width: 100%;
-        /* margin: 0 auto; */
-        /* max-width: 1150px; */
-        /* position: sticky;
-        top: 0;
-        z-index: 20; */
     }
 }
 
@@ -88,8 +81,6 @@ header span {
     .header {
         flex-direction: row;
         justify-content: space-between;
-        /* padding-top: 20px;
-        padding-bottom: 20px; */
         background-color: rgb(248 255 175);
         width: 100%;
         padding: 0.5rem 10rem 0.5rem 2.5rem;
@@ -146,7 +137,6 @@ header span {
         background: linear-gradient(120deg, #5591FF 0%, #42b0f4 100%);;
     }
 }
-
 /* Title Section */
 main hr {
     border: 0;
@@ -154,11 +144,9 @@ main hr {
     height: 1.2px;
     margin: 40px 84px;
 }
-
 .left {
     font-size: 1.5rem;
 }
-
 .firstSection {
     display: flex;
     justify-content: space-around;
@@ -193,7 +181,6 @@ main hr {
 section {
     max-width: 80vw;
     margin: auto;
-    /* height: 80vh; */
 }
 
 section h1 {
@@ -205,200 +192,7 @@ section h2 {
     font-size: 1.8rem;
     font-weight: 100;
 }
-
-/* Projects Section */
-
-#myProjects {
-    margin-top: 45px !important;
-    text-align: center !important;
-    border-bottom: 1px solid rgb(41, 41, 41) !important; 
-    width: 85%;
-    margin-bottom: 3rem !important;
-    line-height: .1em !important;
-    margin-left: 9% !important;
-    padding-top: 2rem;
-}
-#myProjects span { 
-    background: #D1D1D1; 
-    padding: 0 12px !important; 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:0;
-}
-.image-container img {
-    height: 30rem;
-    width: 35rem;
-    margin: 2rem;
-    border-radius: 10px;
-    display: block;
-}
-.image-container {
-    position: relative;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30rem;
-    width: 35rem;
-    margin: 2rem;
-    opacity: 0;
-    transition: .5s ease-in-out;
-    border-radius: 10px;
-}
-.eater-overlay {
-    background-color: rgba(198, 103, 109, 0.65); /*Eater background img color w/ .65 opacity*/
-}
-
-.facebook-watch-overlay {
-    background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
-}
-
-.explornell-overlay {
-    background-color: rgba(148, 110, 221, 0.65); /*Explornell background img color w/ .65 opacity*/
-}
-.instagram-overlay {
-    background-color: rgba(81, 136, 102, 0.75); /*Instagram background img color w/ .65 opacity*/
-}
-.uplift-overlay {
-    background-color: rgba(144, 144, 144, 0.65); /*Uplift background img color w/ .65 opacity*/
-}
-.cureviews-overlay {
-    background-color: rgba(77, 143, 219, 0.70); /*CU Reviews background img color w/ .65 opacity*/
-}
-.dailyui-overlay {
-    background-color: rgba(120, 172, 74, 0.65); /*Daily UI background img color w/ .65 opacity*/
-}
-.overlay h2 {
-    color: white;
-    position: absolute;
-    text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
-    top: 50%;
-    left: 51.5%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-/*Only hover on DESKTOP*/
-@media screen and (min-width: 700px) {
-    .image-container:hover .overlay {
-        opacity: 1;
-        transition: .3s ease-in-out;
-    }
-    .image-container:hover {
-        transition: .3s ease-in-out;
-        transform: scale(1.03);
-    }
-    .image-container:hover .overlay h3{
-        animation: slide-up .35s ease-out;
-    }
-    .mobile-no-hover {
-        display: none !important;
-    }
-    .image-container img {
-        box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.3);
-    }
-}
-
-.mobile-no-hover {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 2vh;
-}
-
-.overlay img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 5px;
-}
-
-/* Skiis */
-
-#mySkills {
-    margin-top: 45px !important;
-    text-align: center !important;
-    border-bottom: 1px solid rgb(41, 41, 41) !important; 
-    width: 85%;
-    margin-bottom: 3rem !important;
-    line-height: .1em !important;
-    margin-left: 9% !important;
-    padding-top: 2rem;
-}
-
-#mySkills span { 
-    background: #D1D1D1; 
-    padding: 0 12px !important; 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin: 5rem; */
-}
-.skills-container img {
-    height: 10rem;
-    width: 10rem;
-    margin: 2rem;
-    border-radius: 1rem;
-    display: block;
-    opacity: 1;
-}
-
-.skills-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 11rem;
-    width: 11rem;
-    margin: 2rem;
-    opacity: 0;
-    transition: .5s ease-in-out;
-    border-radius: 10px;
-}
-
-.color-skills-overlay {
-    background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
-}
-
-/*Only hover on DESKTOP*/
-@media screen and (min-width: 700px) {
-    .skills-container:hover .overlay {
-        opacity: 1;
-        transition: .3s ease-in-out;
-    }
-    .skills-container:hover {
-        transition: .3s ease-in-out;
-        transform: scale(1.03);
-    }
-    .skills-container:hover .overlay h3{
-        animation: slide-up .35s ease-out;
-    }
-    .mobile-no-hover {
-        display: none !important;
-    }
-}
-
 /* Contact Form */
-
 #contact {
     margin-top: 45px !important;
     text-align: center !important;
@@ -479,9 +273,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #3e8e41;
 }
-
 /* Footer */
-
 .line {
     text-align: center !important;
     margin-top: 22px !important;
@@ -525,91 +317,18 @@ button[type="submit"]:hover {
     transition: .35s ease-in-out;
 }
 
-.social i {
-    font-size: 2.5rem;
-    margin-right: 1.5rem;
-    color: black;
-}
-
-.social i:hover {
-    transform: scale(1.1);
-    transition: .6s ease;
-}
-
-/*Blue Line*/
-.blueline a{
-    color: #639aff !important;
-    text-transform: uppercase;
-}
-.blueline a::after {
-    background: #669CFF !important;
-}
-/*Pink Line*/
-.pinkline a{
-    color: pink !important;
-    text-transform: uppercase;
-}
-.pinkline a::after {
-    background: pink !important;
-}
-/*Yellow Line*/
-.yellowline a{
-    color: yellow !important;
-    text-transform: uppercase;
-}
-.yellowline a::after {
-    background: yellow !important;
-}
-/*Green Line*/
-.greenline a{
-    color: green !important;
-    text-transform: uppercase;
-}
-.greenline a::after {
-    background: green !important;
-}
-/*Purple Line*/
-.purpleline a{
-    color: purple !important;
-    text-transform: uppercase;
-}
-.purpleline a::after {
-    background: purple !important;
-}
-/*Facebook Blue Line*/
-.facebookblueline a{
-    color: blue !important;
-    text-transform: uppercase;
-}
-.facebookblueline a::after {
-    background: blue !important;
-}
-
 .footer {
     background-color: rgb(251, 255, 192);
     padding-top: 1.5vh;
     padding-bottom: 1vh;
-    position: sticky; /* Fixes the footer to the screen */
-    bottom: 0;       /* Sticks it to the bottom */
-    left: 0;         /* Ensures it spans the entire screen */
-    width: 100%;     /* Makes the footer full-width */
-    /* z-index: 1000;   Keeps it above other elements */
-    /* text-align: center; */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for separation */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-.social {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-}
-.social a {
-    text-decoration: none;
-}
 .icon {
-    /* height: 3.5rem;
-    width: 1rem; */
     margin: 0.5rem;
 }
 .icon:hover {
